@@ -25,6 +25,7 @@ class AnswerActivity : AppCompatActivity() {
         btnReturn.setOnClickListener(object: View.OnClickListener{
             override fun onClick(v:View?){
                 finish()
+                startActivity(intent)
             }
         })
     }

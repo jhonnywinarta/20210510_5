@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
                     putExtra("answer",answer.text.toString().toInt())
                     putExtra("correct",x.text.toString().toInt()+y.text.toString().toInt())
                 }
+
                 startActivity(intent)
             }
 
