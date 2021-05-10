@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="Result"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textYourAnswer"
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textResult"
+        android:layout_alignParentLeft="true"
+        android:gravity="right"
+        android:text="Your Answer: "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/yourAnswer"
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textResult"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="00"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textRightAnswer"
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textYourAnswer"
+        android:layout_alignParentLeft="true"
+        android:gravity="right"
+        android:text="Right Answer: "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/rightAnswer"
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textYourAnswer"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="00"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rightAnswer"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Your answer is right!"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textComment"
+        android:layout_centerHorizontal="true"
+        android:text="Return" />
+</RelativeLayout>

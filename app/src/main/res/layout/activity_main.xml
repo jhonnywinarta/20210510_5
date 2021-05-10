@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <TextView
+        android:id="@+id/Text_Additon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="Additon"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/x"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/Text_Additon"
+        android:layout_centerVertical="false"
+        android:layout_marginRight="0dp"
+        android:layout_toLeftOf="@id/plus"
+        android:gravity="center"
+        android:text="00"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/Text_Additon"
+        android:layout_toLeftOf="@id/y"
+        android:gravity="center"
+        android:text="+"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/y"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/Text_Additon"
+        android:layout_toLeftOf="@id/equal"
+        android:gravity="center"
+        android:text="00"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/equal"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/Text_Additon"
+        android:layout_toLeftOf="@id/answer"
+        android:gravity="center"
+        android:text="="
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/Text_Additon"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Answer"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnAns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/answer"
+        android:layout_alignParentLeft="true"
+        android:text="Answer" />
+
+    <Button
+        android:id="@+id/btnRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/answer"
+        android:layout_alignParentRight="true"
+        android:text="Refresh" />
+</RelativeLayout>
